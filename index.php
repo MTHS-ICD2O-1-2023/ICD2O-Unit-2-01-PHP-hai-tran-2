@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
 
 <head>
   <meta charset="utf-8" />
   <meta name="description" content="The Hello World program, in PHP" />
   <meta name="keywords" content="mths, ICD2O" />
-  <meta name="author" content="Hai Tran" />
+  <meta name="author" content="Hai Trran" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -19,11 +19,6 @@
 
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script>
-    function myButtonClicked() {
-      document.getElementById("hello-world").innerHTML = "<?php echo '<p>Hello, World!</p>'; ?>"
-    }
-  </script>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
@@ -32,14 +27,13 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/HTML-style-guide.jpeg" alt="study guide">
+        <img src="./images/HTML-style-guide.jpeg">
       </div>
-      <br />
-      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="myButtonClicked()">
-        Say Hello, World!
-      </button>
+      <br>
       <div class="page-content-php">
-        <div id="hello-world"></div>
+        <div id="answer">
+          <?php echo '<p>Hello, World!</p>'; ?>
+        </div>
       </div>
     </main>
   </div>
